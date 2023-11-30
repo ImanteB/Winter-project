@@ -1,0 +1,101 @@
+.about_image {
+    max-width: 100%;
+    margin-bottom: 6.25rem;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    background-color: #EDF3F8;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.75rem;
+    color: #6b8294;
+  }
+
+  .about h1{
+    margin: rem(82) rem(400) rem(51) rem(260);
+    font-size:  rem(56);
+    line-height: rem(56);
+    letter-spacing: -0.43px;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 2.25rem;
+    text-align: center;
+    letter-spacing: -0.016rem;
+    color: hsl(207, 33%, 32%);
+}
+
+h2{
+font-size: 3rem;
+line-height: 3.5rem;
+letter-spacing: -0.37px;
+color: hsl(207, 33%, 32%);
+}
+
+h5{
+font-size: 3.5rem;
+letter-spacing: -0.43px;
+line-height: 4.5rem;
+color: hsl(337, 48%, 49%);
+}
+
+.about_statements {
+    margin-bottom: 6.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.5rem;
+    padding: 0 16.25rem;
+  }
+
+  .about_statements .statement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .about_statements .statement h2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 2rem;
+  }
+  .about_statements .statement p {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+
+  .about_statistycs {
+    margin-bottom: 6.25rem;
+    padding: 0 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1.875rem;
+  }
+
+  .about_statistycs .styc {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(54, 83, 107, 0.255);
+    border-bottom: 1px solid rgba(54, 83, 107, 0.255);
+    width: 100%;
+  }
+
+    .about_statistycs .styc h5 {
+        color: #b9416f;
+      }
+
+h1, h2, h5 {
+    font-family: 'DM Serif Display', serif;
+}
