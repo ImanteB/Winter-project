@@ -1,0 +1,43 @@
+
+@import url('config.css');
+
+.container {
+ 
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1110px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-public-sans);
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
