@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="config.css">
 </head>
+
 <body>
-  
+    <div class="fullscreen"> <!-- visas ekranas - uzdeta width ir height properties su backgroundu -->
+
+        <header id="header"> <!-- first section, telefonas ir tekstas  -->
+
+            <div class="cta">
+                <div class="cta__container">
+                    <img class="cta__img" src="./images/illustration-phone-mockup.svg"
+                        alt="payapi in action on mobile phone">
+
+                </div>
+                <div class="cta__summary">
+                    <h1 class="header__title">Start building with our APIs for absolutely free.</h1>
+                    <form class="hero-form">
+                        <input aria-label="Email Address" class="input" type="email"
+                            placeholder="Enter email address" />
+                        <button class="hero-form__button button primary" type="submit">
+                            Schedule a Demo
+                        </button>
+                        <small class="hero-form__small">Have any questions?
+                            <span class="hero-form__span">Contact Us</span>
+                        </small>
+                    </form>
+                </div>
+            </div>
+
+        </header> <!-- first section end, iki tamsaus fono visi divai sudeti   -->
+
+        <main id="main__home"> <!-- Sudeta tekstas ir logo visi, stilizavimo truksta, antro section pradzia  -->
+            <section class="hero__container">
+                <div class="hero">
+                    <div class="hero__image__container">
+                        <div class="hero__images">
+                            <img class="hero__tesla hero__img hero__img__home" src="./images/tesla.svg"
+                                alt="tesla corporation private limited">
+                            <img class="hero__microsoft hero__img hero__img__home" src="./images/microsoft.svg"
+                                alt="microsoft corporation private limited">
+                            <img class="hero__hewlett hero__img hero__img__home" src="./images/hewlett-packard.svg"
+                                alt="hewlett parkard corporation private limited"><img
+                                class="hero__oracle hero__img hero__img__home" src="./images/oracle.svg"
+                                alt="oracle corporation private limited">
+                            <img class="hero__google hero__img hero__img__home" src="./images/google.svg"
+                                alt="google corporation private limited">
+                            <img class="hero__nvidia hero__img hero__img__home" src="./images/nvidia.svg"
+                                alt="nvidia corporation private limited">
+                        </div>
+                    </div>
+                    <div class="hero_signup">
+                        <h2 class="hero__title">Who we work with</h2>
+                        <p class="hero__summary">Today, millions of people around the world have successfully connected
+                            their accounts to apps they love using our API. We provide developers with the tools they
+                            need to create easy and accessible experiences for their users.</p>
+                            <div class="button_about_us">
+                            <a class="link--btn" href="/about">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- antro section pabaiga   -->
+
+            <section class="secondary__cards">
+                <div class="cards__one">
+                    <div class="terminal_card">
+                        <div class="card__holder">
+                            <img class="card__img " src="./images/illustration-easy-to-implement.svg"
+                                alt="illustration on implementation">
+                        </div>
+                        <div class="card__description">
+                            <h2 class="card__title">Easy to implement</h2>
+                            <p class="card__summary">Our API comes with just a few lines of code. You’ll be up and
+                                running in no time. We built our documentation page to integrate payments functionality
+                                with ease.</p>
+                        </div>
+                    </div>
+                    <div class="two_phones_card">
+                        <div class="card__holder">
+                            <img class="card__img " src="./images/illustration-simple-ui.svg" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h2 class="card__title2">Simple UI &amp; UX</h2>
+                            <p class="card__summary">Our pre-built form is easy to integrate in your app or website’s
+                                checkout flow and designed to optimize conversion.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cards__two">
+                    <div class="card">
+                        <div class="first_banking_icon">
+                            <img class="card__img" src="./images/icon-personal-finances.svg"
+                                alt="personal finances steps">
+                        </div>
+                        <div class="first_div_element_personal_finances">
+                            <h3 class="card__subtitle">Personal Finances</h3>
+                        </div>
+                        <div class="first_paragpraph_cards_two">
+                            <p class="card__summary"> Consolidate financial data from multiple sources and categorize
+                                transactions up to 2 years of history. Analyze reports to reconcile activities in your
+                                account.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="second_stock_icon">
+                            <img class="card__img" src="./images/icon-banking-and-coverage.svg"
+                                alt="types of banking and coverage">
+                        </div>
+                        <div class="second_div_element_stock_market">
+                            <h3 class="card__subtitle">Banking &amp; Coverage</h3>
+                        </div>
+                        <div class="second_paragpraph_cards_two">
+                            <p class="card__summary">With our platform, you can speed up account onboarding and support
+                                ongoing payments for checking, savings, credit card, and brokerage accounts.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="third_wallet_icon">
+                            <img class="card__img" src="./images/icon-consumer-payments.svg"
+                                alt="banking payments systems">
+                        </div>
+                        <div class="third_div_element_wallet_icon">
+                            <h3 class="card__subtitle">Consumer Payments</h3>
+                        </div>
+                        <div class="third_paragpraph_cards_two">
+                            <p class="card__summary">It’s easier to set up secure bank payments with us through a flow
+                                designed with the user experience in mind. Customers could instantly authenticate their
+                                account.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
 </body>
+
 </html>
