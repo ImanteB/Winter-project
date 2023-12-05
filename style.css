@@ -321,7 +321,7 @@ padding: 20px;
     .hero-form__button {
       box-sizing: border-box;
       position: absolute;
-      top: 0px;
+      top: 0.5px;
       right: 0;
       border: 1px solid transparent;
       text-align: center;
@@ -349,7 +349,7 @@ padding: 20px;
 
   .input {
     width: 445px;
-    height: 56px;
+    height: 52.5px;
     flex-shrink: 0;
     border-radius: 24px;
     border: none;
@@ -358,7 +358,7 @@ padding: 20px;
     font-family: var(--font-public-sans);
     color: var(--light-text);
     font-weight: bold;
-    padding: 16px 26px;
+    padding: 16px 22px;
 }
 
   .link--btn {
