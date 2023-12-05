@@ -1,17 +1,16 @@
+/* ======================desktop======================== */
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     text-rendering: optimizeSpeed;
     /* background-color: #EDF3F8; */
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
     line-height: 1.75rem;
     color: #6b8294;
-    width: 1440px;
-    height: 1190px;
+    min-width: 1024;
+    
     box-sizing: border-box;
-    background: url(./IMG/shared/desktop/bg-pattern-circle.svg);
-    background-repeat: no-repeat;
-    background-position: 800px -480px;
+  
 }
 
 
@@ -20,6 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2.5rem 10rem;
+    height: 48px;
 }
 
 .header_logo {
@@ -35,7 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex: 3;
-    width: 1110;
+    min-width: 1024;
     height: 48;
     padding: 0px 0px 0px 64px;
 }
@@ -79,8 +79,8 @@ button,
 }
 
 .links a:not(:first-of-type) {
-    margin-left: 2.5rem;
-}
+    margin-left: 2.5rem; 
+ }
 
 h1,
 h2,
@@ -120,18 +120,19 @@ h3 {
     font-weight: 400;
 }
 
-/* .contact_page_backround_picture {
+.contact_page_backround_picture {
     width: 780px;
     height: 780px;
-    position: absolute;
-    right: -150px;
-    top: -500px;
+    position: relative;
+margin-left: -800px;
+    margin-top: -500px;
     z-index: -1;
-} */
+ 
+}
 
 .contact_page_content {
     
-    display: block;
+   
      
 }
 
@@ -173,8 +174,8 @@ h3 {
 /* .contact_page_conteiner_partners_box_tray_item {} */
 
 .contact_page_main_text {
-    width: 730px;
-    height: 133px;
+    max-width: 730px;
+    height: auto;
     flex-shrink: 0;
 }
 
@@ -353,8 +354,65 @@ input[type="checkbox"]:checked::after{
 }
 
 
-.contact_page_bottom_section {
-    width: 1100px;
+
+
+
+.action{
+     padding: 6rem 10rem;
+    /* display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem; */
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .action h2{
+    color: #36536b;
+  }
+
+.form-email{
+    background-color: hsl(220, 60%, 99%);
+    border-radius: 24px;
+    display:flex;
+    width: 445;
+    box-shadow: 10px 10px 25px -10px hsla(207, 33%, 32%, 0.251); 
+}
+
+input[type=email]{
+    color: hsl(207, 33%, 32%);
+    font-weight: 700;
+    padding: 14px 5px 14px 27px;
+    width: 60%;
+    border: none;
+    border-radius: 24px;
+}
+
+input:focus{
+    outline: none;
+    opacity: 1;
+}
+
+.btn-form{
+    border:none;
+    border-radius: 24px;
+    padding: 15px 26px;
+    background-color: hsl(337, 48%, 49%);
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(220, 60%, 99%);
+}
+
+.btn-form:hover{
+    background-color: hsl(337, 60%, 64%);
+}
+/* .contact_page_bottom_section {
+    min-width: 1024px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -422,7 +480,7 @@ input[type="checkbox"]:checked::after{
     font-weight: 700;
     line-height: normal;
     border: none;
-}
+} */
 
 .footer {
     background: #1c2731;
@@ -469,4 +527,60 @@ input[type="checkbox"]:checked::after{
 }
 .footer_logo{
     filter:invert(150%) sepia(107%) saturate(10%) hue-rotate(287deg) brightness(115%) contrast(100%);
+}
+
+
+
+/* ============Tablet====================== */
+@media (max-width:1023px){     
+    .contact_page_conteiner_content_box_inside
+    {
+        .contact_page_conteiner_content {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;}
+        
+    display: flex;
+        gap: 5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .links a:not(:first-of-type) {
+        margin-left: 2.5rem;
+}
+
+
+/* =============mobile===================== */
+@media (max-width:767px){     
+
+
+    .header_links ,header button{
+        display: none;
+    }
+    
+    .footer {
+        display: flex;
+    flex-direction: column;
+    
+    }
+    .footer_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_links{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    }
+    .links a:not(:first-of-type) {
+        margin-left: 0;
+
+    }
+    .contact_page_conteiner_partners_box_tray {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        justify-items: center;}
 }
