@@ -7,7 +7,7 @@
 }
 
 .fullscreen {
-    width: 1440px;
+    min-width: 1440px;
     height: 3066px;
     background: #EDF3F8;
     margin: 0 auto;
@@ -58,7 +58,7 @@ h2 {
 .hero__container {
     display: flex;
     flex-direction: row-reverse;
-    width: 1440px;
+    min-width: 1440px;
     height: 472px;
     flex-shrink: 0;
     background-color: #1b262f;
