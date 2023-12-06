@@ -18,7 +18,7 @@
     flex-direction: row-reverse;
     padding: 0 10.3125rem;
     line-height: 1.5;
-    font-family: "Public Sans",sans-serif;
+    font-family: "Public Sans", sans-serif;
     font-size: 15px;
     margin: 0;
     box-sizing: border-box;
@@ -29,11 +29,11 @@
 .cta__container {
     -webkit-flex: 1 1 40%;
     flex: 1 1 40%;
-    
+
 }
 
 .header__title {
-    font-family: "DM Serif Display",serif;
+    font-family: "DM Serif Display", serif;
     color: #36536b;
     padding: 0 .9375rem;
     text-align: left;
@@ -58,13 +58,13 @@ h2 {
 .hero__container {
     display: flex;
     flex-direction: row-reverse;
-    width: 1440px;
+    min-width: 1440px;
     height: 472px;
     flex-shrink: 0;
     background-color: #1b262f;
     padding-bottom: 6.95rem;
     align-items: flex-end;
-    
+
 }
 
 .hero__images {
@@ -74,7 +74,7 @@ h2 {
     justify-items: center;
     place-items: center;
     filter: brightness(0) invert(1);
-    
+
 }
 
 .hero {
@@ -95,11 +95,11 @@ h2 {
     text-align: center;
     padding-top: 0.3125rem;
     max-width: 457px;
-    margin: auto; 
+    margin: auto;
 }
 
 .hero__summary {
-    font-family: "Public Sans",sans-serif;
+    font-family: "Public Sans", sans-serif;
     color: #fff;
     margin: 0;
     font-size: .9375rem;
@@ -111,18 +111,19 @@ h2 {
 }
 
 .hero__title {
-font-family: DM Serif Display;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: 56px; /* 116.667% */
-letter-spacing: -0.369px;
-color: #FBFCFE;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    /* 116.667% */
+    letter-spacing: -0.369px;
+    color: #FBFCFE;
 
 }
 
 
-.cards__one .terminal_card  {
+.cards__one .terminal_card {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
@@ -130,29 +131,31 @@ color: #FBFCFE;
     align-items: center;
     margin: 100px;
 }
+
 .cards__two {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
     padding: 2.4375rem;
-    
+
     gap: 15px;
 }
+
 .cta__summary {
-line-height: 1.5;
-font-family: "Public Sans",sans-serif;
-font-size: 15px;
-box-sizing: border-box;
-padding: 0 1.5rem;
-margin: auto;
-flex: 1 1 60%;
-max-width: 100%;
+    line-height: 1.5;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    margin: auto;
+    flex: 1 1 60%;
+    max-width: 100%;
 }
 
 
 .hero__image__container {
-  margin-left: 100px;
+    margin-left: 100px;
 }
 
 .two_phones_card {
@@ -167,46 +170,48 @@ max-width: 100%;
 }
 
 .card__title {
-    
-color: #36536B;
-font-family: DM Serif Display;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: 56px; /* 116.667% */
-letter-spacing: -0.369px;
-}
 
-.card__title2 {
-    
     color: #36536B;
     font-family: DM Serif Display;
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    line-height: 56px; /* 116.667% */
+    line-height: 56px;
+    /* 116.667% */
     letter-spacing: -0.369px;
-    }
+}
+
+.card__title2 {
+
+    color: #36536B;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    /* 116.667% */
+    letter-spacing: -0.369px;
+}
 
 .card__summary {
-color: #6C8294;
-font-family: Public Sans;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
+    color: #6C8294;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .card__description {
     width: 445px;
-   
+
 }
 
 .card {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .first_banking_icon {
@@ -229,7 +234,8 @@ padding: 20px;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 138.889% */
+    line-height: 25px;
+    /* 138.889% */
     letter-spacing: -0.138px;
 }
 
@@ -241,7 +247,8 @@ padding: 20px;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 138.889% */
+    line-height: 25px;
+    /* 138.889% */
     letter-spacing: -0.138px;
 }
 
@@ -253,7 +260,8 @@ padding: 20px;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 138.889% */
+    line-height: 25px;
+    /* 138.889% */
     letter-spacing: -0.138px;
 }
 
@@ -262,27 +270,27 @@ padding: 20px;
     margin-top: 10px;
 }
 
-.form-email{
+.form-email {
     background-color: hsl(220, 60%, 99%);
     border-radius: 24px;
-    display:flex;
+    display: flex;
     width: 445;
-    box-shadow: 10px 10px 25px -10px hsla(207, 33%, 32%, 0.251); 
-  }
+    box-shadow: 10px 10px 25px -10px hsla(207, 33%, 32%, 0.251);
+}
 
-  .btn-form{
-  border:none;
-  border-radius: 24px;
-  padding: 15px 26px;
-  background-color: hsl(337, 48%, 49%);
-  font-size: 15px;
-  font-weight: 700;
-  color: hsl(220, 60%, 99%);
+.btn-form {
+    border: none;
+    border-radius: 24px;
+    padding: 15px 26px;
+    background-color: hsl(337, 48%, 49%);
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(220, 60%, 99%);
 }
 
 .cta__questions {
     line-height: 1.5;
-    font-family: "Public Sans",sans-serif;
+    font-family: "Public Sans", sans-serif;
     font-size: 15px;
     padding: 0;
     box-sizing: border-box;
@@ -293,7 +301,7 @@ padding: 20px;
 
 .cta__summary--anchor {
     line-height: 1.5;
-    font-family: "Public Sans",sans-serif;
+    font-family: "Public Sans", sans-serif;
     font-size: 15px;
     text-align: left;
     margin: 0;
@@ -315,41 +323,41 @@ padding: 20px;
     max-width: 445px;
     top: 15px;
     right: 0;
-    
-  }
-  
-    .hero-form__button {
-      box-sizing: border-box;
-      position: absolute;
-      top: 0px;
-      right: 0;
-      border: 1px solid transparent;
-      text-align: center;
-      cursor: pointer;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 24px;
-      background-color: var(--color-primary-dark-pink);
-      color: var(--light-text);
-      padding: 16px 26px;
-    }
-  
-  .hero-form__small {
+
+}
+
+.hero-form__button {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.5px;
+    right: 0;
+    border: 1px solid transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 24px;
+    background-color: var(--color-primary-dark-pink);
+    color: var(--light-text);
+    padding: 16px 26px;
+}
+
+.hero-form__small {
 
     font-family: var(--font-public-sans);
     box-sizing: border-box;
     font-size: 1rem;
     color: var(--accent-text);
-    margin: 24px 25px; 
-  }
+    margin: 24px 25px;
+}
 
-  .hero-form__span {
+.hero-form__span {
     font-weight: bold;
-  }
+}
 
-  .input {
+.input {
     width: 445px;
-    height: 56px;
+    height: 52.5px;
     flex-shrink: 0;
     border-radius: 24px;
     border: none;
@@ -358,12 +366,12 @@ padding: 20px;
     font-family: var(--font-public-sans);
     color: var(--light-text);
     font-weight: bold;
-    padding: 16px 26px;
+    padding: 16px 22px;
 }
 
-  .link--btn {
+.link--btn {
     line-height: 1.5;
-    font-family: "Public Sans",sans-serif;
+    font-family: "Public Sans", sans-serif;
     text-align: center;
     font-size: 1rem;
     letter-spacing: -.12px;
@@ -371,11 +379,11 @@ padding: 20px;
     text-decoration: none;
     border: 2px solid #fff;
     padding: .9rem 1.8rem;
-    border-radius: 24px; 
+    border-radius: 24px;
     margin: 56px auto 0;
     max-width: 130px;
     margin-left: 0;
-  }
+}
 
 .button_about_us {
     margin-top: 20px;
@@ -385,3 +393,4 @@ padding: 20px;
     width: 106px;
     height: 106px;
 }
+
