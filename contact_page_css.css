@@ -45,7 +45,7 @@ body {
     line-height: 1.75rem;
     color: #6b8294;
     max-width: 1440px;
-    min-width: 1024px;
+    
     max-height: 1190px;
     
     box-sizing: border-box;
@@ -715,7 +715,7 @@ a{
     }
     .links a:not(:first-of-type) {
         margin-left: 0;}
-        
+
         .footer_links a {
             color: hsl(220, 60%, 99%);
             margin-left: 0px;
