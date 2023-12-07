@@ -561,7 +561,7 @@ input[type=email]:nth-of-type(1){
     color: hsl(207, 33%, 32%);
     font-weight: 700;
     padding: 14px 5px 14px 27px;
-    width: 60%;
+    width: 240px;
     border: none;
     border-radius: 24px;
 }
