@@ -57,38 +57,123 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 2rem;
-    height: 48px;
     padding-left: 165px;
     padding-right: 165px;
+    
 }
 
-.header_logo {
+
+
+
+  .header_logo {
     flex: 1;
 }
-
-.header_logo a {
+  
+  .header_logo a {
     opacity: 1;
 }
-
-.header .navigation {
+  
+  .header .navigation {
+    flex: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 3;
-    min-width: 1024;
-    height: 48;
-    padding: 0px 0px 0px 64px;
+
+}
+
+  .header .navigation--active {
+    position: absolute;
+    background-color: #1c2731;
+    background-image: url(/IMG/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 800px auto;
+    background-position: center -33.75rem;
+    top: 0;
+    right: 0;
+    left: 4.6875rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2.73125rem 1.5rem 0;
+    gap: 2rem;
+    animation: slideIn 1s;
+  }
+
+  .header .navigation--active .navigation_menu {
+    align-self: flex-end;
+  }
+
+  .header .navigation--active .navigation_menu span {
+    background: white;
+  }
+
+  .header .navigation--active .navigation_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid rgba(251, 252, 254, 0.15);
+    width: 100%;
+    padding: 2.6875rem;
+  }
+
+  .header .navigation--active .navigation_links a {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    color: #fbfcfe;
+  }
+
+  .header .navigation--active .navigation_action {
+    opacity: 1;
+    width: 100%;
+    display: block;
+  }
+
+
+/* .header_menu span {
+  display: block;
+  width: 1.75rem;
+  height: 0.1875rem;
+  background: #1c2731;
+  transition: all 600ms ease-in-out;
+  transform-origin: 4px 2px;
+} */
+
+.header_menu span:not(:first-child) {
+  margin-top: 0.25rem;
+}
+
+.header_menu--active span:first-child {
+  transform: rotate(45deg);
+}
+
+.header_menu--active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header_menu--active span:last-child {
+  transform: rotate(-45deg);
+}
+
+.header_menu span:not(:first-child) {
+  margin-top: 0.25rem;
 }
 
 .header_action {
-    letter-spacing: -0.12px;
-    color: hsl(220, 60%, 99%);
-    text-align: center;
+  border:none;
+  border-radius: 2.6rem;
+  padding: 0.9rem 1.6rem;
+  background-color: hsl(337, 48%, 49%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: hsl(220, 60%, 99%);
+  opacity: 1;
 }
 
 .header_action:hover {
-    background-color: #da6c96;
+  background-color: hsl(337, 60%, 64%);
 }
 
 a {
@@ -221,6 +306,8 @@ margin-left: -800px;
     max-width: 730px;
     height: 133px;
     flex-shrink: 0;
+    margin-top: 76px;
+    margin-bottom: 15px;
 }
 
 .contact_page_user_information_form {
@@ -229,7 +316,7 @@ margin-left: -800px;
     justify-content: space-between;
     align-items: right;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 6px;
     
 }
 
@@ -250,6 +337,9 @@ margin-left: -800px;
     letter-spacing: -0.007rem;
     transition: all 250ms ease-in-out 0s
 }
+#contact_page_form_fname:hover {
+    cursor: pointer;
+}
 
 #contact_page_form_email {
     background-color: #EDF3F8;
@@ -268,6 +358,7 @@ margin-left: -800px;
     letter-spacing: -0.007rem;
     transition: all 250ms ease-in-out 0s;
 }
+#contact_page_form_email:hover {cursor: pointer;}
 
 #contact_page_form_company_name {
     background-color: #EDF3F8;
@@ -286,7 +377,7 @@ margin-left: -800px;
     letter-spacing: -0.007rem;
     transition: all 250ms ease-in-out 0s;
 }
-
+#contact_page_form_company_name:hover {cursor: pointer;}
 #contact_page_form_title {
     background-color: #EDF3F8;
     width: 100%;
@@ -303,9 +394,8 @@ margin-left: -800px;
     line-height: 1.563rem;
     letter-spacing: -0.007rem;
     transition: all 250ms ease-in-out 0s;
-
 }
-
+#contact_page_form_title:hover{cursor: pointer;}
 .contact_page_form_button {
     background-color: #EDF3F8;
     width: 152px;
@@ -319,10 +409,8 @@ margin-left: -800px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.115px;
-    cursor: pointer;
     
 }
-
 .contact_page_form_button:hover {
     border-radius: 24px;
     border: 1px solid #36536B;
@@ -348,9 +436,9 @@ margin-left: -800px;
     font-weight: lighter;
     color: rgb(108, 130, 148);
     display: flex;
-
-
 }
+.contact_page_form_checkbox_text:hover {
+    cursor: pointer;}
 
 input[type="checkbox"] {
     opacity: 0.25;
@@ -390,7 +478,9 @@ input[type="checkbox"]:checked::after{
     letter-spacing: -0.007rem;
     transition: all 250ms ease-in-out 0s;
 }
-
+#contact_page_form_message:hover{
+    cursor:pointer;
+ }
 .contact_page_form_warning_msg {
     color: rgb(255, 0, 0);
     align-self: flex-start;
