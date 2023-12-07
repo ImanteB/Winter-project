@@ -584,76 +584,7 @@ input:focus{
 
 
 
-/* .contact_page_bottom_section {
-    min-width: 1024px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-.contact_page_bottom_section_text {
-
-    line-height: 56px;
-    letter-spacing: -0.369px;
-    width: 445px;
-}
-
-.contact_page_bottom_section_button_side {
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 1rem;
-    position: relative;
-    max-width: 27.813rem;
-    margin: auto;
-    margin-right: 0;
-    width: 100%;
-    height: 3rem;
-    font-weight: bolder;
-    border-radius: 3.125rem;
-    outline: none;
-    border: none;
-    padding-left: 1.688rem;
-    color: rgb(54, 83, 107);
-    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 16px;
-    cursor: pointer;
-}
-
-.contact_page_bottom_section_input_button {
-    width: 173px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 24px;
-    background: #BA4270;
-    color: rgb(251, 252, 254);
-    border: none;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    cursor: pointer
-}
-.contact_page_bottom_section_input_button:hover {
-    width: 173px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 24px;
-    background: #DA6D97;
-    color: rgb(251, 252, 254);
-    border: none;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    cursor: pointer
-}
-
-.contact_page_bottom_section_input_field {
-    color: #36536B;
-    opacity: 0.5;
-    font-family: Public Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border: none;
-} */
 
 .footer {
     background: #1c2731;
@@ -670,12 +601,11 @@ input:focus{
 }
 
 .footer_logo {
+    width: 135px;
+    height: 38px;
     flex: 1;
 }
 
-.footer_logo {
-    opacity: 1;
-}
 
 .footer_section {
     flex: 3;
@@ -685,12 +615,16 @@ input:focus{
 
 .footer_links a {
     color: hsl(220, 60%, 99%);
+    margin-left: -79px;
+
+    
     
 }
 
 .footer_social img {
     color: hsl(220, 60%, 99%);
     font-size: 1.5rem;
+    margin-right: -2px;
 }
 
 .footer_social img:hover {
