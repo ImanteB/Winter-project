@@ -7,7 +7,7 @@ main{
   background-color: #edf3f8;
 }
 .container{
-  max-width:1200px;
+  max-width:1440px;
   margin:0 auto;
 
 }
@@ -269,12 +269,9 @@ border:none;
     margin-left: 24px;
   }
   /*footer end*/
-  /* ============Tablet====================== */
+   /* ============Tablet====================== */
 @media (max-width:1023px){     
     
-  .contact_page_conteiner_content_box_inside{
-      flex-direction: column;
-  }
       .action{
            display: flex;
           flex-direction: column; 
@@ -294,9 +291,11 @@ a{
 /* =============mobile===================== */
 @media (max-width:767px){     
 
-
+main{
+  background-color: #edf3f8;
+}
   .header_links ,header button{
-      display: none;
+      display: flex;  /*add edit*/
   }
   
   .footer {
@@ -304,6 +303,7 @@ a{
   flex-direction: column;
   
   }
+  
   .footer_section{
       display: flex;
       flex-direction: column;
@@ -316,11 +316,5 @@ a{
   }
   .links a:not(:first-of-type) {
       margin-left: 0;
-
   }
-  .contact_page_conteiner_partners_box_tray {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
-      justify-items: center;}
-  }
+}
