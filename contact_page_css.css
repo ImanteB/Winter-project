@@ -518,8 +518,10 @@ input[type="checkbox"]:checked::after{
       padding: 6rem 10rem;
      padding-left: 0; 
      padding-right: 0;
-     padding-top: 0; 
+     padding-top: 0;
+     margin-bottom: -45px; 
      margin-top: 40px;
+     
     display: flex; 
     justify-content: space-between;
     align-items: center;
