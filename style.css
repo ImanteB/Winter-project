@@ -394,3 +394,17 @@ h2 {
     height: 106px;
 }
 
+
+
+
+.cta {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 10.3125rem;
+    line-height: 1.5;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 0;
+}
