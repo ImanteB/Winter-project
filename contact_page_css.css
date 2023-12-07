@@ -646,7 +646,30 @@ input:focus{
 
 
 /* ============Tablet====================== */
-@media (max-width:1023px){     
+@media (max-width:1023px){  
+
+    * { margin: 0;
+        padding: 0;
+    }
+    
+    .header{
+        padding: 0;
+        width: 768px;
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navigation{
+        padding: 0;
+        width: 768px;
+        margin: 0;
+    margin-left: 0;}
+
+    body, footer, header{
+        width: 768px;
+        margin: 0;
+        padding: 0;
+    }   
     
     .contact_page_conteiner_content_box_inside{
         flex-direction: column;
@@ -691,8 +714,12 @@ a{
     margin: 0;
     }
     .links a:not(:first-of-type) {
-        margin-left: 0;
-
+        margin-left: 0;}
+        
+        .footer_links a {
+            color: hsl(220, 60%, 99%);
+            margin-left: 0px;
+            margin-right: 0px;
     }
     .contact_page_conteiner_partners_box_tray {
         display: grid;
