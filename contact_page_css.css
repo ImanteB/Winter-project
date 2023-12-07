@@ -78,6 +78,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: -810px;
+    margin-top: -3px;
+    
 
 }
 
@@ -170,6 +173,7 @@ body {
   font-weight: 700;
   color: hsl(220, 60%, 99%);
   opacity: 1;
+
 }
 
 .header_action:hover {
