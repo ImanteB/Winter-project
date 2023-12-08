@@ -5,6 +5,7 @@
 }
 main{
   background-color: #edf3f8;
+  display: flex;
 }
 .container{
   max-width:1440px;
@@ -15,8 +16,32 @@ main{
   display: flex;
   justify-content: space-between;
   font-family: 'DM Serif Display', serif;
+  }
+  @media (max-width: 767px) {
+    .plans {
+      display: block;
+      text-align: center; 
+    }
+  main{
+    display:block;
+    padding: 0;
+    margin:0;
+    background-color: #edf3f8;
+  }
+  .bottom1{
+    display:none;
+  }
+  h1{
+    text-align: center;
+    justify-content: center;
+  }
+  .plan h2{
+    text-align: center;
+    justify-content: center;
+  }
+
   
-}
+  }
 h1{
   text-align: left;
   font-size: 56px;
@@ -61,6 +86,7 @@ margin-bottom: -80px;
   line-height: 40px;
   letter-spacing: -0.246px;
   
+  
 }
 .request-access{
   font-size: 15px;
@@ -90,7 +116,7 @@ margin-bottom: -80px;
  border-radius: 24px;
   width:173px;
   padding:14px;
-  border: solid black 1px;
+
   height: 48px;
   }
   .schedule-button:hover{
@@ -384,7 +410,14 @@ border:none;
   @media (max-width: 767px) {
     .form-email .btn-form {
       text-align: center;
+    
     }
+    .plan h2 {
+      font-size: 24px;
+    }
+main{
+  display:block;
+}
   }
   
   .header {
@@ -398,6 +431,12 @@ border:none;
     .header {
       padding: 2.5rem;
     }
+.plan h2{
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0,185px;
+} 
+  
   }
   
   @media (max-width: 767px) {
