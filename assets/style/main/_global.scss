@@ -1,0 +1,360 @@
+//* ===============  AUTOMATICALLY CONVERT PX TO REM
+@function rem($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+
+}
+
+
+// ===============  BASE CSS RESET
+*, *::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+html:focus-within {
+  scroll-behavior: smooth;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+//* =============== MAKE ANIMATION OPTIONAL FOR USERS
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    //   scroll-behavior: auto !important;
+    }
+  }
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+// body
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    background-color: $color-bg;  
+    font-family: $font-public-sans;    
+    font-size: rem(15);
+    line-height: rem(28 );
+    color: $color-sec-lt-san-blue;
+}
+
+a{
+    font-size: rem(15);
+    font-family: $font-public-sans;
+    font-weight: $weight-bold;
+    text-decoration: none;
+    color: $color-sec-san-blue;
+    opacity: 0.7;
+    letter-spacing: -0.12px;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+h1,h2,h4,h5{
+  font-family: $font-DM;
+}
+
+h1{
+    font-size: rem(72);
+    color: $color-sec-san-blue;
+    line-height: rem(72);
+    letter-spacing: -0.55px;
+
+    @include breakpoint-down(medium){
+      font-size: rem(48);
+      text-align: center;
+      line-height: rem(56);
+      letter-spacing: -0.37px;
+    }
+
+    @include breakpoint-down(small){
+      font-size: rem(32);
+      line-height: rem(36);
+      letter-spacing: -0.25px;
+    }
+}
+
+.about h1, .contact h1{
+        margin: rem(82) rem(400) rem(51) rem(260);
+        font-size:  rem(56);
+        line-height: rem(56);
+        letter-spacing: -0.43px;
+
+        @include breakpoint-down(medium){
+            margin: rem(75) rem(98) rem(54);
+
+            font-size: rem(48);
+            letter-spacing: -0.37px;
+            text-align: center;
+        }
+
+        @include breakpoint-down(small){
+            margin: rem(48) rem(24);
+            font-size: rem(32);
+            line-height: rem(36);
+            letter-spacing: -0.25px;
+        }
+}
+
+h2{
+  font-size: rem(48);
+  line-height: rem(56);
+  letter-spacing: -0.37px;
+  color: $color-sec-san-blue;
+
+
+  @include breakpoint-down(small){
+    font-size: rem(32);
+    line-height: rem(36);
+    letter-spacing: -0.25px;
+  }
+}
+
+h3{
+  font-size: rem(18);
+  letter-spacing: -0.14px;
+  line-height: rem(25);
+  color: $color-sec-san-blue;
+}
+
+h4{
+  color: $color-pry-pink;
+  font-size: rem(32);
+  letter-spacing: -0.25px;
+  line-height: rem(40);
+
+  @include breakpoint-down(medium){
+    font-size: rem(24);
+    letter-spacing: -0.18px;
+  }
+}
+
+h5{
+  font-size: rem(56);
+  letter-spacing: -0.43px;
+  line-height: rem(72);
+  color: $color-sec-san-blue;
+
+  @include breakpoint-down(medium){
+    font-size: rem(48);
+    letter-spacing: -0.37px;
+  }
+
+}
+
+// screen readers
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+            clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+
+button, .button{
+    padding: rem(15) rem(25);
+    border-radius: rem(24);
+    background-color: $color-pry-pink;
+    box-shadow: $shadow-btn;
+}
+
+//*  visibility
+.hide-for-mobile {
+  //hide elements in mobile view
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  //hide elements in desktopview
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-for-tablet {
+  //hide elements in desktopview
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
+
+.links{
+
+        a{
+
+            &:not(:first-of-type){
+                margin-left: rem(40);
+
+                @include breakpoint-down(small){
+                 margin-left: 0;
+                 
+                }
+            }
+
+        }
+
+        
+}
+
+// *** containers for backgrounds
+
+.background-container{
+    background: url(../../img/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: rem(780) rem(-200);
+
+    @include breakpoint-down(medium){
+      background-size: rem(1170) auto;
+      background-position: center rem(-900);
+    }
+    @include breakpoint-down(small){
+      background-position: center rem(-930);
+    }
+}
+
+.background-container-others{
+    background: url(../../img/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: rem(780) rem(-450);
+
+    @include breakpoint-down(medium){
+      background-position: rem(400) rem(-500);
+    }
+    @include breakpoint-down(small){
+      background-position: rem(200) rem(-500);
+    }
+}
+
+
+
+//*** Page email form style
+
+.form-email{
+            background-color: $color-pry-white;
+            border-radius: rem(24);
+
+            display:flex;
+            width: rem(445);
+            box-shadow: rem(10) rem(10) rem(25) rem(-10) rgba(54,83, 107, 0.25); 
+            
+
+            @include breakpoint-down(small){
+              box-shadow: none;
+                background-color: unset;
+                flex-direction: column;
+                width: 100%;
+                gap: rem(16);
+                
+
+            }
+
+            input[type=email]{
+                color: $color-sec-san-blue;
+                font-weight: $weight-bold;
+                padding: rem(14) rem(5) rem(14) rem(27);
+                width: 60%;
+                border: none;
+                border-radius: rem(24);
+
+                &:focus{
+                    outline: none;
+                    opacity: 1;
+
+                }
+
+                @include breakpoint-down(small){
+                  width: 100%;
+                    box-shadow: rem(10) rem(10) rem(25) rem(-10) rgba(54,83, 107, 0.25); 
+
+                    padding: rem(14) rem(10) ;
+                    text-align: center;
+                }
+            }
+
+    .btn-form{
+      border:none;
+      border-radius: rem(24);
+      padding: rem(15) rem(26);
+      background-color: $color-pry-pink ;
+      font-size: rem(15);
+      font-weight: $weight-bold;
+      color: $color-pry-white;
+
+      &:hover{
+        background-color: $color-sec-pink ;
+      }
+
+      @include breakpoint-down(small){
+          text-align: center;
+
+      }
+
+    }
+}
+
+// *** button with border style
+.btn-outline,.btn-outline-dark{
+  border: 1px solid $color-pry-white;
+  width: rem(140);
+  display: grid;
+  place-items: center;
+  place-content: center;
+  font-weight: $weight-bold;
+
+  height: rem(48);
+  border-radius: rem(24);
+  opacity: 1;
+  color: $color-pry-white;
+
+  &:hover{
+      background-color: $color-pry-white;
+      color: $color-sec-mirage-blue;
+  }
+}
+
+.btn-outline-dark{
+  border: 1px solid $color-sec-mirage-blue;
+  color: $color-sec-mirage-blue;
+
+   &:hover{
+      background-color: $color-sec-mirage-blue;
+      color: $color-pry-white;
+  }
+
+}

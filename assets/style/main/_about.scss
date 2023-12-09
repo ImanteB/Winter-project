@@ -1,0 +1,89 @@
+.about{
+
+    @extend %bg-cir;
+    background-position: rem(-500) rem(400);
+
+    @include breakpoint-down(medium){
+        background: none;
+    }
+
+    
+
+    &__statements{
+        margin-bottom: rem(100);
+        @extend %flex-col;
+        gap: rem(56);
+        padding: 0 rem(260);
+
+        @include breakpoint-down(medium){
+            padding: 0 rem(40);
+        }
+
+        @include breakpoint-down(small){
+            padding: 0 rem(24);
+        }
+
+        .statement{
+            display: flex;
+
+            @include breakpoint-down(small){
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: rem(16);
+            }
+            h2{
+                flex: 1;
+                font-size:rem(32);
+
+                @include breakpoint-down(small){
+                    font-size: rem(24);
+                }
+            }
+            p{
+                flex: 2;
+            }
+        }
+    }
+
+    &__image{
+        margin-bottom: rem(100);
+    }
+
+    &__stats{
+        margin-bottom: rem(100);
+        padding: 0 rem(165);
+        @extend %flex-sb;
+        gap: rem(30);
+
+        @include breakpoint-down(medium){
+            padding: 0 rem(40);
+
+        }
+
+        @include breakpoint-down(small){
+            margin:  0 rem(24) rem(100);
+            padding: none;
+            flex-direction: column;
+            border-top: 1px solid rgba(54, 83, 107, 0.255) ;
+            border-bottom: 1px solid rgba(54, 83, 107, 0.255);
+
+            
+        }
+
+        .stat{
+            padding: rem(16) 0;
+            border-top: 1px solid rgba(54, 83, 107, 0.255) ;
+            border-bottom: 1px solid rgba(54, 83, 107, 0.255);
+            width:100%;
+            @include breakpoint-down(small){
+                border: none;
+                @extend %flex;
+            }
+            h5{
+                color: $color-pry-pink;
+            }
+        }
+    }
+}
+

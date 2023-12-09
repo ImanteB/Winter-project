@@ -1,0 +1,64 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+
+@import "animation";
+
+
+@import "global";
+@import "header-footer";
+
+@import "home";
+
+@import "pricing";
+
+@import "about";
+
+@import "contact";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//* ===============  AUTOMATICALLY CONVERT PX TO REM
+@function rem($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+
+}
+
+
+
+
+
+
+
+
+
