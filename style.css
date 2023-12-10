@@ -1,6 +1,7 @@
 *,
 :after,
 :before {
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -74,6 +75,7 @@ h2 {
     justify-items: center;
     place-items: center;
     filter: brightness(0) invert(1);
+    margin-left: 1rem;
 
 }
 
@@ -90,12 +92,20 @@ h2 {
     margin-right: 165px; */
 }
 
+
 .main .hero__signup {
     color: #fff;
     text-align: center;
     padding-top: 0.3125rem;
     max-width: 457px;
     /* margin: auto; */
+    
+}
+
+.hero_signup {
+    flex: 0 0 50%;
+    padding-right: 100px;
+    height: 100%;
 }
 
 .hero__summary {
@@ -103,12 +113,12 @@ h2 {
     color: #fff;
     margin: 0;
     font-size: .9375rem;
-    line-height: 28px;
+    line-height: 35px;
     font-weight: 200;
     text-align: left;
-    padding: 1.25rem 0;
+    padding: 1rem 6rem;
     opacity: 0.7;
-    margin-left: 2.5rem;
+    /* margin-left: 15.5rem; */
 }
 
 .hero__title {
@@ -120,8 +130,7 @@ h2 {
     /* 116.667% */
     letter-spacing: -0.369px;
     color: #FBFCFE;
-    margin-left: 2.5rem;
-
+    margin-left: 5.5rem;
 }
 
 
@@ -389,7 +398,7 @@ h2 {
 
 .button_about_us {
     margin-top: 20px;
-    margin-left: 2.5rem;
+    margin-left: 5.5rem;
 }
 
 .card__image {
