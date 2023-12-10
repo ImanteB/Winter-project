@@ -58,7 +58,7 @@ h2 {
 .hero__container {
     display: flex;
     flex-direction: row-reverse;
-    min-width: 1440px;
+    width: 1440px;
     height: 472px;
     flex-shrink: 0;
     background-color: #1b262f;
@@ -86,8 +86,8 @@ h2 {
     justify-content: left;
     -webkit-align-items: center;
     align-items: center;
-    margin-left: 165px;
-    margin-right: 165px;
+    /* margin-left: 165px;
+    margin-right: 165px; */
 }
 
 .main .hero__signup {
@@ -95,7 +95,7 @@ h2 {
     text-align: center;
     padding-top: 0.3125rem;
     max-width: 457px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .hero__summary {
@@ -155,7 +155,7 @@ h2 {
 
 
 .hero__image__container {
-    margin-left: 100px;
+    flex: 0 0 50%;
 }
 
 .two_phones_card {
@@ -394,17 +394,3 @@ h2 {
     height: 106px;
 }
 
-
-
-
-.cta {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0 10.3125rem;
-    line-height: 1.5;
-    font-family: "Public Sans", sans-serif;
-    font-size: 15px;
-    margin: 0;
-    box-sizing: border-box;
-    margin-top: 0;
-}
