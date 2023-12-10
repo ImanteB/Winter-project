@@ -1,11 +1,11 @@
 * {
   box-sizing:border-box;
   padding: 0;
-  
-}
+  }
 main{
   background-color: #edf3f8;
   display: flex;
+  
 }
 .container{
   max-width:1440px;
@@ -24,12 +24,24 @@ main{
     }
   main{
     display:block;
-    padding: 0;
-    margin:0;
+    /*padding: 0 ;
+    margin:0 ;*/
     background-color: #edf3f8;
   }
   .bottom1{
-    display:none;
+    padding-bottom: 50px;
+    text-align: center;
+   
+  }
+  .pricingtext{
+    font-size: 32px;
+    line-height: 36px;
+
+  }
+  .ready-to-start{
+    display: block;
+    text-align: center;
+
   }
   h1{
     text-align: center;
@@ -39,11 +51,52 @@ main{
     text-align: center;
     justify-content: center;
   }
+.t1{
+  text-align: center;
+  line-height: 28px;
+}
+.ready-to-start{
+  font-size:32px;
+  line-height: 36px;
+  letter-spacing: -0.246px;
+}
+p{
+  display:none;
+}
+li{
+  text-align: center;
+  justify-content: center;
+  line-height: 28px;
 
-  
+}
+ul{
+  text-align: center;
+}
+.email{
+  display: block;
+  width:327px !important;
+  height:48px;
+  flex-shrink: 0;
+  margin-left: 30px;
+  align-items: center;
+}
+.schedule-button{
+  display:block;
+  text-align: center;
+  width:327px !important;
+  height:48px;
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+input{
+  text-align: center;
+}
+.footer_logo{
+  margin-left: -100px;
+}
   }
 h1{
-  text-align: left;
+ 
   font-size: 56px;
   color: #36536B; 
   font-style: normal;
@@ -53,7 +106,7 @@ h1{
   font-family: 'DM Serif Display', serif;
 }
 .pricingtext{
-  text-align: left;
+
   color:#36536B;
   font-size: 56px;
   font-style: normal;
@@ -66,7 +119,7 @@ form {
   text-align: right;;
 }
 .ready-to-start{
-  text-align: left;
+ 
   font-size: 48px;
   font-weight: 400;
   font-style:normal;
@@ -144,7 +197,7 @@ ul{
 }
 li{
   padding: 7px;
-  text-align: left;
+ 
   margin-right: 13px ;
   color: #36536B;
   font-size: 16px;
@@ -313,8 +366,11 @@ border:none;
       flex: 1;
       justify-content: flex-end;
     }
-  
-    .header .navigation--active {
+
+  .navigation{
+    margin-left: 150px;
+  }
+    /*.header .navigation--active {
       position: absolute;
       background-color: #1c2731;
       background-image: url(/IMG/shared/desktop/bg-pattern-circle.svg);
@@ -332,7 +388,7 @@ border:none;
       padding: 2.73125rem 1.5rem 0;
       gap: 2rem;
       animation: slideIn 1s;
-    }
+    }*/
   
     .header .navigation--active .navigation_menu {
       align-self: flex-end;
@@ -452,7 +508,7 @@ main{
   
   @media (min-width: 1024px) {
     .hide_desktop {
-      display: none;
+      display: none; /*panaikina buttona*/
     }
   }
   
@@ -471,4 +527,7 @@ main{
       margin-left: 0;
     }
   }
+  /*naujas copy*/
+
+
   
