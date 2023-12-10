@@ -1,0 +1,103 @@
+@media screen and (max-width:1023px) {
+    .fullscreen {
+        width: 768px;
+        height: 3417px;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta__container {
+        margin-left: 120px;
+        margin-bottom: 60px;
+    }
+
+    .cta__img {
+        width: 181px;
+        height: 279px;
+    }
+
+
+    .input {
+        width: 391px;
+        height: 52.5px;
+        flex-shrink: 0;
+        border-radius: 24px;
+        border: none;
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        font-family: var(--font-public-sans);
+        color: var(--light-text);
+        font-weight: bold;
+        padding: 16px 22px;
+    }
+
+    .header__title {
+        font-family: "DM Serif Display", serif;
+        color: #36536b;
+        padding: 0 .9375rem;
+        text-align: left;
+        font-size: 2rem;
+        line-height: 61px;
+        letter-spacing: -.55px;
+        margin-top: -5rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .cta__summary {
+        line-height: 3.5;
+        font-family: "Public Sans", sans-serif;
+        font-size: 1px;
+        box-sizing: border-box;
+        padding: 0 1.5rem;
+        /* margin: auto; */
+        /* flex: 1 1 60%; */
+        width: 100%;
+    }
+
+    .hero-form__small {
+        margin-left: 70px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .hero__container {
+        width: 768px;
+        height: 615px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: left;
+        justify-content: left;
+        -webkit-align-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        padding: 50px 100px 0 100px;
+    }
+
+    .hero_signup {
+        flex: 0 0 5cqw;
+        padding-right: 100px;
+        height: 100%;
+    }
+
+    .hero__image__container {
+        flex: 0 0 50%;
+    }
+
+    .hero__title {
+        /* margin: 0 auto; */
+    }
+
+    
+}
