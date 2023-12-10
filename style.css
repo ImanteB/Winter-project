@@ -108,6 +108,7 @@ h2 {
     text-align: left;
     padding: 1.25rem 0;
     opacity: 0.7;
+    margin-left: 2.5rem;
 }
 
 .hero__title {
@@ -119,6 +120,7 @@ h2 {
     /* 116.667% */
     letter-spacing: -0.369px;
     color: #FBFCFE;
+    margin-left: 2.5rem;
 
 }
 
@@ -387,6 +389,7 @@ h2 {
 
 .button_about_us {
     margin-top: 20px;
+    margin-left: 2.5rem;
 }
 
 .card__image {
