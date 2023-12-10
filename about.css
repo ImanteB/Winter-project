@@ -63,9 +63,10 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  line-height: 3.5rem;
+  line-height: 3rem;
   letter-spacing: -0.37px;
   color: #36536b;
+  margin: 15px 0;
 }
 
 @media (max-width: 767px) {
@@ -148,6 +149,8 @@ button, .button {
     background-repeat: no-repeat;
     background-position: 49rem -28rem;
     width: 100%;
+    background: #EDF3F8;
+    cursor: pointer;
 }
 @media (max-width: 1023px) {
   .background-container-others {
@@ -177,6 +180,14 @@ button, .button {
   line-height: 56px;
 }
 @media (max-width: 767px) {
+  .action {
+    display: block;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 1023px) {
   .action {
     display: block;
     align-items: center;
@@ -218,10 +229,10 @@ button, .button {
 
 @media (max-width: 767px) {
   .form-email input[type=email] {
-    width: 28rem;
+    width: 27rem;
     box-shadow: 10px 10px 25px -10px hsla(207, 33%, 32%, 0.251); 
     padding: 0.9rem 0.6rem;
-    text-align: center;
+  
   }
 }
 
@@ -282,90 +293,23 @@ button, .button {
 }
 
 @media (max-width: 767px) {
-  .header .nav {
+  .header .navigation {
     flex: 1;
     justify-content: flex-end;
   }
 
-  .header .navigation--active {
-    position: absolute;
-    background-color: #1c2731;
-    background-image: url(/IMG/shared/desktop/bg-pattern-circle.svg);
-    background-repeat: no-repeat;
-    background-size: 800px auto;
-    background-position: center -33.75rem;
-    top: 0;
-    right: 0;
-    left: 4.6875rem;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2.73125rem 1.5rem 0;
-    gap: 2rem;
-    animation: slideIn 1s;
+ .header_menu span:not(:first-child) {
+    margin-top: 0.25rem;
   }
-
-  .header .navigation--active .navigation_menu {
-    align-self: flex-end;
-  }
-
-  .header .navigation--active .navigation_menu span {
-    background: white;
-  }
-
-  .header .navigation--active .navigation_links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    border-top: 1px solid rgba(251, 252, 254, 0.15);
-    width: 100%;
-    padding: 2.6875rem;
-  }
-
-  .header .navigation--active .navigation_links a {
-    font-size: 1.25rem;
-    opacity: 0.7;
-    color: #fbfcfe;
-  }
-
-  .header .navigation--active .navigation_action {
-    opacity: 1;
-    width: 100%;
+  .header_menu span {
     display: block;
+    width: 1.75rem;
+    height: 0.1875rem;
+    background: #1c2731;
   }
 }
 
-.header_menu span {
-  display: block;
-  width: 1.75rem;
-  height: 0.1875rem;
-  background: #1c2731;
-  transition: all 600ms ease-in-out;
-  transform-origin: 4px 2px;
-}
 
-.header_menu span:not(:first-child) {
-  margin-top: 0.25rem;
-}
-
-.header_menu--active span:first-child {
-  transform: rotate(45deg);
-}
-
-.header_menu--active span:nth-child(2) {
-  opacity: 0;
-}
-
-.header_menu--active span:last-child {
-  transform: rotate(-45deg);
-}
-
-.header_menu span:not(:first-child) {
-  margin-top: 0.25rem;
-}
 
 .header_action {
   border:none;
@@ -465,104 +409,6 @@ button, .button {
     margin-left: 1.5rem;
   }
 
-
-
-/*.navigation_links {
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  width: 100%;
-  padding: 43;
-}
-
-.navigation_action {
-  opacity: 1;
-  width: 25%;
-  display: block;
-  
-}
-
-
-a{
-    font-size: 15px;
-    font-family: sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: hsl(207, 33%, 32%);
-    opacity: 0.7;
-    letter-spacing: -0.10px;
-}
-
-a:hover{
-        opacity: 1;
-}
-
-.button {
-padding: 15px 26px;
-border-radius: 24px;
-background-color: hsl(337, 48%, 49%);
-box-shadow: 10px 10px 25px rgba(55, 84, 109, 0.268);
-font-size: 15px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -0.115px;
-border:none;
-  }
-
- .button:hover{
-    opacity: 0.7;
-  }
-
-  .links a:not(:first-of-type) {
-    margin-left: 2.5rem;
-  }
-
-h1,h2,h5{
-    font-family: serif;
-}
-
-p{
-flex: 2;
-color:#6C8294;
-font-family: sans-serif;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; 
-}
-
-.about h1{
-margin: 5rem 26rem 3rem 16rem;
-color: #36536B;
-font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: 56px;
-letter-spacing: -0.4px;
-}
-
-h2{
-color: #36536B;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 40px;
-letter-spacing: -0.246px;
-width:350px;
-height: 72px;
-flex: 1;
-}
-
-h5{
-font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: 72px;
-letter-spacing: -0.431px;
-color: hsl(337, 48%, 49%); 
-margin: 0 auto;
-}*/
 
   .about{
     background: url("IMG/shared/desktop/bg-pattern-circle.svg");
