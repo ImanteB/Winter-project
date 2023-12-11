@@ -664,13 +664,13 @@ input:focus{
 
     body, footer, header{
         max-width: 1023px;
-        min-width: 500px;
+
         margin: 0;
         padding: 0;
         margin-left: 0;
         margin-right: 0;
     }   
-    
+
     
     .contact_page_main_content{
         margin: auto 0;
@@ -700,6 +700,9 @@ a{
 @media (max-width:767px){     
 
 
+    .body{
+        min-height: 1836px;
+    }
     .header_links ,header button{
         display: none;
     }
